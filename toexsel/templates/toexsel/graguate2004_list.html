@@ -1,0 +1,52 @@
+{% extends 'app.html' %}
+{% block content %}
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+    
+
+    <h2>2004</h2>
+    <div class="table-responsive">
+      <table class="table table-striped table-sm">
+        <thead>
+          <tr>
+            <th>diplom_number</th>
+            <th>tirkeu_katar</th>
+            <th>btrgen_uakyt</th>
+            <th>fio</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for contact in page_obj %}
+          <tr>
+            <td>{{ contact.id }}</td>
+            <td>{{ contact.diplom_number }}</td>
+            <td>{{ contact.tirkeu_katar }}</td>
+            <td>{{ contact.fio}}</td>
+            <td>{{ contact.btrgen_uakyt}}</td>
+            <td>{{contact.berilgen_kun}}</td>
+            <td>{{contact.mamangik}}</td>
+            <td>{{contact.pos}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+
+<div class="pagination">
+    <span class="step-links">
+        {% if page_obj.has_previous %}
+            <a href="?page=1">&laquo; Ең бірінші</a>
+            <a href="?page={{ page_obj.previous_page_number }}">Артқа</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+        </span>
+
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}">Келесі</a>
+            <a href="?page={{ page_obj.paginator.num_pages }}">Ең соңғысы &raquo;</a>
+        {% endif %}
+    </span>
+</div>
+      </table>
+    </div>
+  </main>
+{% endblock %}
