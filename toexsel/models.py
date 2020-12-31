@@ -22,7 +22,7 @@ class Graduate2005(models.Model):
     fio = models.CharField('Тегі-аты әкесінің аты',max_length=255,blank=True,null=True)
     berilu_merzim = models.CharField('берілу мерзімі',max_length=100, blank=True,null=True)
     mkk = models.CharField('МКК протоколының нөмірі, мерзімі',max_length=100,blank=True,null=True)
-    mamangik = models.CharField('мамандық',max_length=10,blank=True,null=True)
+    mamangik = models.CharField('мамандық',max_length=100,blank=True,null=True)
     berilgen_kva = models.CharField('берілген квалификациясы',max_length=255,blank=True,null=True)
     pos = models.CharField('безимянный',max_length=30,blank=True,null=True)
 
