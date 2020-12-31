@@ -1,0 +1,76 @@
+#header{
+    background-color: aliceblue;
+    color: black!important;
+}
+.branding__title-link{
+    color: black!important;
+}
+#header a:link, #header a:visited{
+    color: black!important;
+}
+div.breadcrumbs{
+    padding:20px 40px;
+    background-color: #842727;
+    color:white;
+}
+#nav-sidebar{
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: auto;
+}
+.module h2, .module caption, .inline-group h2 {
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(37, 10, 110);
+    padding:10px;
+
+}
+tr:nth-child(2n), tr:nth-child(2n) .errorlist, tr:nth-child(2n+1) + .row-form-errors, tr:nth-child(2n+1) + .row-form-errors .errorlist {
+    background:white;
+    color:rgb(37, 10, 110);
+    padding:10px;
+}
+tr:nth-child(2n+1), .row-form-errors {
+    background:white;
+}
+a:link, a:visited {
+    color: rgb(37, 10, 110);
+    text-decoration: none;
+}
+body td{
+    color:rgb(37, 10, 110);
+}
+
+#nav-sidebar .current-model {
+    background-color: #cacaca;
+}
+thead th {
+    background: #842727;
+}
+thead th, tfoot td {
+    color: white;
+    padding: 5px 10px;
+    font-size: 11px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+thead th a:link, thead th a:visited {
+    color: white;
+}
+#toolbar form input[type="submit"] {
+    border: none!important;
+    margin: 0;
+    background: #842727!important;
+    box-shadow: none!important;
+    cursor: pointer;
+    color: white!important;
+}
+.button, input[type="submit"], input[type="button"], .submit-row input, a.button {
+    background: #842727!important;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+.login #container {
+    background: #fff;
+    border-radius: 20px!important;
+}

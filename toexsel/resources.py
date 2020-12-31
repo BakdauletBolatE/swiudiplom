@@ -1,5 +1,5 @@
 from import_export import resources
-from .models import Graguate2004,Graduate2005,Graduate2006,Graduate2007,Graduate2008,Graduate2009,Graduate2010
+from .models import *
 
 class GraguateResoureses(resources.ModelResource):
     class Meta:
@@ -28,4 +28,40 @@ class Graduate2009Resources(resources.ModelResource):
 class Graduate2010Resources(resources.ModelResource):
     class Meta:
         model = Graduate2010
+
+class Graduate2011Resources(resources.ModelResource):
+    class Meta:
+        model = Graduate2011
+
+class Graduate2012Resources(resources.ModelResource):
+    class Meta:
+        model = Graduate2012
+
+class Graduate2013Resources(resources.ModelResource):
+    class Meta:
+        model = Graduate2013
+
+class Graduate2014Resources(resources.ModelResource):
+    class Meta:
+        model = Graduate2014
+
+class Graduate2015Resources(resources.ModelResource):
+    class Meta:
+        model = Graduate2015
+
+class Graduate2016Resources(resources.ModelResource):
+    class Meta:
+        model = Graduate2016
+
+class Graduate2018Resources(resources.ModelResource):
+    class Meta:
+        model = Graduate2018
+
+class Graduate2019ochResources(resources.ModelResource):
+    class Meta:
+        model = Graduate2019och
+
+class Graduate2019zaochResources(resources.ModelResource):
+    class Meta:
+        model = Graduate2019zaoch
         
