@@ -1,1 +1,1 @@
-web: gunicorn ideas.wsgi --log-file -
+web: gunicorn Exsel.wsgi --log-file -
