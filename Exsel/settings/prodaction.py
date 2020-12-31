@@ -84,9 +84,7 @@ DB_PASSWORD = os.environ.get('DB_PASSWORD')
 DB_HOST = os.environ.get('DB_HOST')
 DB_USER = os.environ.get('DB_USER')
 
-import dj_database_url
-db = dj_database_url.config()
-DATABASES['default'].update(db)
+
 
 DATABASES = {
     'default': {
@@ -98,7 +96,9 @@ DATABASES = {
         'PORT':'5432'
     }
 }
-
+import dj_database_url
+db = dj_database_url.config()
+DATABASES['default'].update(db)
 
 
 
