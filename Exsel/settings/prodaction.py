@@ -22,7 +22,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-SECRET_KEY = os.environ.get('SECRET_KEY')
+# SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = 'r$sdjx8m8@22)kzn=-)ai=y6jiq@z3!!o=yw^0fc^_szi&p_04'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -83,7 +84,9 @@ DB_PASSWORD = os.environ.get('DB_PASSWORD')
 DB_HOST = os.environ.get('DB_HOST')
 DB_USER = os.environ.get('DB_USER')
 
-
+import dj_database_url
+db = dj_database_url.config()
+DATABASES['default'].update(db)
 
 DATABASES = {
     'default': {
@@ -96,9 +99,7 @@ DATABASES = {
     }
 }
 
-import dj_database_url
-db = dj_database_url.config()
-DATABASES['default'].update(db)
+
 
 
 # Password validation
