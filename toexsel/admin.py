@@ -3,6 +3,47 @@ from import_export.admin import ImportExportModelAdmin
 from .models import *
 
 # Register your models here.
+
+@admin.register(Graguate1996)
+class Graguate1996Admin(ImportExportModelAdmin):
+    list_display = ('id','diplom_number','tirkeu_katar','fio','usp','pos')
+    search_fields = ['diplom_number','fio']
+
+@admin.register(Graguate1997)
+class Graguate1997Admin(ImportExportModelAdmin):
+    list_display = ('id','diplom_number','tirkeu_katar','fio','usp')
+    search_fields = ['diplom_number','fio']
+
+@admin.register(Graguate1998)
+class Graguate1998Admin(ImportExportModelAdmin):
+    list_display = ('id','diplom_number','tirkeu_katar','fio','usp')
+    search_fields = ['diplom_number','fio']
+
+@admin.register(Graguate1999)
+class Graguate1999Admin(ImportExportModelAdmin):
+    list_display = ('id','diplom_number','tirkeu_katar','fio','mak','diplombk','mamangikship','formedu')
+    search_fields = ['diplom_number','fio']
+
+@admin.register(Graguate2000)
+class Graguate2000Admin(ImportExportModelAdmin):
+    list_display = ('id','diplom_number','tirkeu_katar','fio','mamangikship','hattama','berilgen_kun','usp')
+    search_fields = ['diplom_number','fio']
+
+@admin.register(Graguate2001)
+class Graguate2001Admin(ImportExportModelAdmin):
+    list_display = ('id','diplom_number','tirkeu_katar','fio','mamangikship','berilgen_kun','usp')
+    search_fields = ['diplom_number','fio']
+
+@admin.register(Graguate2002)
+class Graguate2002Admin(ImportExportModelAdmin):
+    list_display = ('id','diplom_number','tirkeu_katar','fio','mamangikship','hattama','berilgen_kun','usp')
+    search_fields = ['diplom_number','fio']
+
+@admin.register(Graguate2003)
+class Graguate2003Admin(ImportExportModelAdmin):
+    list_display = ('id','diplom_number','tirkeu_katar','fio','btrgen_kun','berilgen_kun','mamangikship','usp','srok')
+    search_fields = ['diplom_number','fio']
+
 @admin.register(Graguate2004)
 class GraguateAdmin(ImportExportModelAdmin):
     list_display = ('id','diplom_number','tirkeu_katar','fio','btrgen_uakyt','berilgen_kun','mamangik','pos')

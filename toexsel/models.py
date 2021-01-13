@@ -2,6 +2,103 @@ from django.db import models
 
 # Create your models here.
 
+class Graguate1996(models.Model):
+    diplom_number = models.CharField('Дипломның нөмірі, сериясы',max_length=100,blank=True,null=True)
+    tirkeu_katar = models.CharField('Тіркеу қатар саны',max_length=100,blank=True,null=True)
+    fio = models.CharField('Тегі-аты әкесінің аты',max_length=255,blank=True,null=True)
+    usp = models.CharField('Успеваемость',max_length=12,blank=True,null=True)
+    pos = models.CharField('безимянный',max_length=30,blank=True,null=True)
+
+    class Meta:
+        verbose_name = "Выпуснкик 1996 года"
+        verbose_name_plural = "Выпуснкики 1996 года"
+
+class Graguate1997(models.Model):
+    diplom_number = models.CharField('Дипломның нөмірі, сериясы',max_length=100,blank=True,null=True)
+    tirkeu_katar = models.CharField('Тіркеу қатар саны',max_length=100,blank=True,null=True)
+    fio = models.CharField('Тегі-аты әкесінің аты',max_length=255,blank=True,null=True)
+    usp = models.CharField('Успеваемость',max_length=12,blank=True,null=True)
+
+    class Meta:
+        verbose_name = "Выпуснкик 1997 года"
+        verbose_name_plural = "Выпуснкики 1997 года"
+
+class Graguate1998(models.Model):
+    diplom_number = models.CharField('Дипломның нөмірі, сериясы',max_length=100,blank=True,null=True)
+    tirkeu_katar = models.CharField('Тіркеу қатар саны',max_length=100,blank=True,null=True)
+    fio = models.CharField('Тегі-аты әкесінің аты',max_length=255,blank=True,null=True)
+    usp = models.CharField('Успеваемость',max_length=12,blank=True,null=True)
+
+    class Meta:
+        verbose_name = "Выпуснкик 1998 года"
+        verbose_name_plural = "Выпуснкики 1998 года"
+
+class Graguate1999(models.Model):
+    diplom_number = models.CharField('Дипломның нөмірі, сериясы',max_length=100,blank=True,null=True)
+    tirkeu_katar = models.CharField('Тіркеу қатар саны',max_length=100,blank=True,null=True)
+    fio = models.CharField('Тегі-аты әкесінің аты',max_length=255,blank=True,null=True)
+    mak = models.CharField('МАК',max_length=30,blank=True,null=True)
+    diplombk = models.CharField('Диплом беру туралы бұйрық № ',max_length=100,blank=True,null=True)
+    mamangikship = models.CharField('Мамандық шифрі',max_length=255,blank=True,null=True)
+    formedu = models.CharField('Форма обучения (очн., заочн.)',max_length=100,blank=True,null=True)
+
+    class Meta:
+        verbose_name = "Выпуснкик 1999 года"
+        verbose_name_plural = "Выпуснкики 1999 года"
+
+class Graguate2000(models.Model):
+    diplom_number = models.CharField('Дипломның нөмірі, сериясы',max_length=100,blank=True,null=True)
+    tirkeu_katar = models.CharField('Тіркеу қатар саны',max_length=100,blank=True,null=True)
+    fio = models.CharField('Тегі-аты әкесінің аты',max_length=255,blank=True,null=True)
+    mamangikship = models.CharField('Мамандық шифрі',max_length=255,blank=True,null=True)
+    hattama = models.CharField('Хаттама',max_length=255,blank=True,null=True)
+    berilgen_kun = models.CharField('Берілген күн',max_length=100,blank=True,null=True)
+    usp = models.CharField('Успеваемость',max_length=12,blank=True,null=True)
+
+    class Meta:
+        verbose_name = "Выпуснкик 2000 года"
+        verbose_name_plural = "Выпуснкики 2000 года"
+
+class Graguate2001(models.Model):
+    diplom_number = models.CharField('Дипломның нөмірі, сериясы',max_length=100,blank=True,null=True)
+    tirkeu_katar = models.CharField('Тіркеу қатар саны',max_length=100,blank=True,null=True)
+    fio = models.CharField('Тегі-аты әкесінің аты',max_length=255,blank=True,null=True)
+    mamangikship = models.CharField('Мамандық шифрі',max_length=255,blank=True,null=True)
+    berilgen_kun = models.CharField('Берілген күн',max_length=100,blank=True,null=True)
+    usp = models.CharField('Успеваемость',max_length=12,blank=True,null=True)
+
+    class Meta:
+        verbose_name = "Выпуснкик 2001 года"
+        verbose_name_plural = "Выпуснкики 2001 года"
+
+
+class Graguate2002(models.Model):
+    diplom_number = models.CharField('Дипломның нөмірі, сериясы',max_length=100,blank=True,null=True)
+    tirkeu_katar = models.CharField('Тіркеу қатар саны',max_length=100,blank=True,null=True)
+    fio = models.CharField('Тегі-аты әкесінің аты',max_length=255,blank=True,null=True)
+    mamangikship = models.CharField('Мамандық шифрі',max_length=255,blank=True,null=True)
+    hattama = models.CharField('Хаттама',max_length=255,blank=True,null=True)
+    berilgen_kun = models.CharField('Берілген күн',max_length=100,blank=True,null=True)
+    usp = models.CharField('Успеваемость',max_length=12,blank=True,null=True)
+
+    class Meta:
+        verbose_name = "Выпуснкик 2002 года"
+        verbose_name_plural = "Выпуснкики 2002 года"
+
+class Graguate2003(models.Model):
+    diplom_number = models.CharField('Дипломның нөмірі, сериясы',max_length=100,blank=True,null=True)
+    tirkeu_katar = models.CharField('Тіркеу қатар саны',max_length=100,blank=True,null=True)
+    fio = models.CharField('Тегі-аты әкесінің аты',max_length=255,blank=True,null=True)
+    btrgen_kun = models.CharField('Берілген күн',max_length=100,blank=True,null=True)
+    berilgen_kun = models.CharField('Берілген күн',max_length=100,blank=True,null=True)
+    mamangikship = models.CharField('Мамандық шифрі',max_length=255,blank=True,null=True)
+    usp = models.CharField('Успеваемость',max_length=12,blank=True,null=True)
+    srok = models.CharField('Хаттама',max_length=255,blank=True,null=True)
+
+    class Meta:
+        verbose_name = "Выпуснкик 2003 года"
+        verbose_name_plural = "Выпуснкики 2003 года"
+
 class Graguate2004(models.Model):
     diplom_number = models.CharField('Дипломның нөмірі, сериясы',max_length=100,blank=True,null=True)
     tirkeu_katar = models.CharField('Тіркеу қатар саны',max_length=100,blank=True,null=True)

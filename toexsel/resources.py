@@ -1,6 +1,38 @@
 from import_export import resources
 from .models import *
 
+class Graguate1996Resoureses(resources.ModelResource):
+    class Meta:
+        model = Graguate1996
+
+class Graguate1997Resoureses(resources.ModelResource):
+    class Meta:
+        model = Graguate1997
+
+class Graguate1998Resoureses(resources.ModelResource):
+    class Meta:
+        model = Graguate1998
+
+class Graguate1999Resoureses(resources.ModelResource):
+    class Meta:
+        model = Graguate1999
+
+class Graguate2000Resoureses(resources.ModelResource):
+    class Meta:
+        model = Graguate2000
+
+class Graguate2001Resoureses(resources.ModelResource):
+    class Meta:
+        model = Graguate2001
+
+class Graguate2002Resoureses(resources.ModelResource):
+    class Meta:
+        model = Graguate2002
+
+class Graguate2003Resoureses(resources.ModelResource):
+    class Meta:
+        model = Graguate2003
+
 class GraguateResoureses(resources.ModelResource):
     class Meta:
         model = Graguate2004
