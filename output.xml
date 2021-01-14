@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0"><object model="toexsel.graguate1996" pk="1"><field name="diplom_number" type="CharField">ЖБ-1 № 0013948</field><field name="tirkeu_katar" type="CharField">02/001</field><field name="fio" type="CharField">Сыздыкова Рыскуль</field><field name="usp" type="CharField">
