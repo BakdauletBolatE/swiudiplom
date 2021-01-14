@@ -140,8 +140,8 @@ class Graduate2006(models.Model):
         verbose_name_plural = "Выпуснкики 2006 года"
 
 class Graduate2007(models.Model):
-    diplom_number = models.CharField('Дипломның нөмірі, сериясы',max_length=100,blank=True,null=True)
-    tirkeu_katar = models.CharField('Тіркеу қатар саны',max_length=100,blank=True,null=True)
+    diplom_number = models.CharField('Дипломның нөмірі, сериясы',max_length=255,blank=True,null=True)
+    tirkeu_katar = models.CharField('Тіркеу қатар саны',max_length=255,blank=True,null=True)
     fio = models.CharField('Тегі-аты әкесінің аты',max_length=255,blank=True,null=True)
     mamangikship = models.CharField('Мамандық шифрі',max_length=255,blank=True,null=True)
     akt = models.CharField('Акт',max_length=255,blank=True,null=True)
