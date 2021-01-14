@@ -85,6 +85,10 @@ class Graduate2016Resources(resources.ModelResource):
     class Meta:
         model = Graduate2016
 
+class Graduate2017Resources(resources.ModelResource):
+    class Meta:
+        model = Graduate2017
+
 class Graduate2018Resources(resources.ModelResource):
     class Meta:
         model = Graduate2018

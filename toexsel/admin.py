@@ -113,6 +113,11 @@ class Graduate2016Admin(ImportExportModelAdmin):
     list_display = ('id','diplom_number','tirkeu_katar','mak','diplombk','mamangikship','formedu','fio')
     search_fields = ['diplom_number','fio']
 
+@admin.register(Graduate2017)
+class Graduate2017Admin(ImportExportModelAdmin):
+    list_display = ('id','diplom_number','tirkeu_katar','mak','diplombk','mamangikship','formedu','fio')
+    search_fields = ['diplom_number','fio']
+
 @admin.register(Graduate2018)
 class Graduate2018Admin(ImportExportModelAdmin):
     list_display = ('id','diplom_number','tirkeu_katar','mak','diplombk','mamangikship','formedu','fio')
