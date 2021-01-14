@@ -290,6 +290,20 @@ class Graduate2016(models.Model):
         verbose_name = "Выпуснкик 2016 года"
         verbose_name_plural = "Выпуснкики 2016 года"
 
+class Graduate2017(models.Model):
+    diplom_number = models.CharField('Дипломның нөмірі, сериясы',max_length=100,blank=True,null=True)
+    tirkeu_katar = models.CharField('Тіркеу қатар саны',max_length=100,blank=True,null=True)
+    mak = models.CharField('МАК',max_length=150,blank=True,null=True)
+    diplombk = models.CharField('Диплом беру туралы бұйрық № ',max_length=100,blank=True,null=True)
+    mamangikship = models.CharField('Мамандық шифрі',max_length=255,blank=True,null=True)
+    formedu = models.CharField('Форма обучения (очн., заочн.)',max_length=100,blank=True,null=True)
+    fio = models.CharField('Тегі-аты әкесінің аты',max_length=255,blank=True,null=True)
+  
+
+    class Meta:
+        verbose_name = "Выпуснкик 2017 года"
+        verbose_name_plural = "Выпуснкики 2017 года"
+
 class Graduate2018(models.Model):
     diplom_number = models.CharField('Дипломның нөмірі, сериясы',max_length=100,blank=True,null=True)
     tirkeu_katar = models.CharField('Тіркеу қатар саны',max_length=100,blank=True,null=True)
