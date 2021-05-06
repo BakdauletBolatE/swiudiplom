@@ -1,0 +1,17 @@
+CREATE DATABASE diplom;
+
+
+CREATE USER bakdaulet WITH PASSWORD 'baguvix123F';
+
+
+ALTER ROLE bakdaulet SET client_encoding TO 'utf8';
+ALTER ROLE bakdaulet SET default_transaction_isolation TO 'read committed';
+ALTER ROLE bakdaulet SET timezone TO 'UTC';
+
+
+GRANT ALL PRIVILEGES ON DATABASE diplom TO bakdaulet;
+
+sudo nano /etc/nginx/sites-available/swiudiplom
+sudo ln -s /etc/nginx/sites-available/swiudiplom /etc/nginx/sites-enabled
+
+

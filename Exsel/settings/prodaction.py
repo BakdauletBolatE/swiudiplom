@@ -5,6 +5,9 @@ SECRET_KEY = 'r$sdjx8m8@22)kzn=-)ai=y6jiq@z3!!o=yw^0fc^_szi&p_04'
 DEBUG = True
 ALLOWED_HOSTS = ['*']
 
+import _locale
+_locale._getdefaultlocale = (lambda *args: ['en_US', 'utf8'])
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
