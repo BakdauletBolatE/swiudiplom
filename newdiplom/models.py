@@ -4,7 +4,7 @@ from django.db import models
 
 class SwiuDiplom2019(models.Model):
 
-    nameUniversity = models.CharField('наименование вуза (полностью)',max_length=255,null=True,blank=True)
+    nameUniversity = models.CharField('наименование вузаs (полностью)',max_length=255,null=True,blank=True)
     firstName = models.CharField('Фамилия',max_length=255,null=True,blank=True)
     name = models.CharField('Имя (полностью)',max_length=255,null=True,blank=True)
     lastName = models.CharField('Отчество (полностью)',max_length=255,null=True,blank=True)
@@ -29,6 +29,10 @@ class SwiuDiplom2019(models.Model):
     numberDiplomSeria2 = models.CharField('Серия и номер диплома (обязательно)',max_length=255,null=True,blank=True)
     dateEndDublicat = models.CharField('Дата выдачи дубликата (обязательно)',max_length=255,null=True,blank=True)
 
+    class Meta:
+
+        verbose_name = 'Выпускник 2019(Новая версия)'
+        verbose_name_plural = 'Выпускники 2019(Новая версия)'
 
 class SwiuDiplomBefore2018(models.Model):
 
@@ -55,10 +59,7 @@ class SwiuDiplomBefore2018(models.Model):
     numberDiplomSeria2 = models.CharField('Серия и номер диплома (обязательно)',max_length=255,null=True,blank=True)
     dateEndDublicat = models.CharField('Дата выдачи дубликата (обязательно)',max_length=255,null=True,blank=True)
 
+    class Meta:
 
-
-class TwoSSS(models.Model):
-
-    num = models.CharField(max_length=255,null=True,blank=True)
-    name = models.TextField(null=True,blank=True)
-    ids = models.CharField(max_length=255,null=True,blank=True)
+        verbose_name = 'Выпускник до 1996-2019(Новая версия)'
+        verbose_name_plural = 'Выпускники до 1996-2019(Новая версия)'

@@ -10,9 +10,3 @@ class SwiuDiplom2019Resourses(resources.ModelResource):
     class Meta:
         model = SwiuDiplom2019
 
-
-class TwoSSSResourses(resources.ModelResource):
-
-    class Meta:
-
-        model = TwoSSS

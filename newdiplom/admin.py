@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import SwiuDiplomBefore2018,SwiuDiplom2019,TwoSSS
+from .models import SwiuDiplomBefore2018,SwiuDiplom2019
 from import_export.admin import ImportExportModelAdmin
 # Register your models here.
 
@@ -16,7 +16,3 @@ class SwiuDiplom2019Admin(ImportExportModelAdmin):
     list_filter = ['dateOut','formEducation','nameUniversity']
     search_fields = ['dateEnter','fio']
 
-
-@admin.register(TwoSSS)
-class TwoSSSAdmin(ImportExportModelAdmin):
-    pass

@@ -1,1 +1,0 @@
-web: gunicorn Exsel.wsgi --log-file -
