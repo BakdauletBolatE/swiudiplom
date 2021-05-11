@@ -68,6 +68,10 @@ class SwiuDiplom2020(models.Model):
         verbose_name = 'Выпускник 2020(Новая версия)'
         verbose_name_plural = 'Выпускники 2020(Новая версия)'
 
+
+
+
+
 class SwiuDiplomBefore2018(models.Model):
 
     nameUniversity = models.CharField('наименование вуза (полностью)',max_length=255,null=True,blank=True)
